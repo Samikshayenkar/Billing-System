@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  background="cc.png">
+    <div class="container">
+        <h1>Coffee Shop Billing System</h1>
+        <div class="order-form" text-align: center>
+            <label for="item">Select Item:</label>
+            <select id="item">
+                <option value="200">Americano - 200/-</option>
+                <option value="280">Cappuccino - 280/-</option>
+                <option value="220">Latte - 220/-</option>
+                <option value="350">Iced coffee - 350/-</option>
+                <option value="250">espresso - 250/-</option>
+                <option value="350">cold brew- 350/-</option>
+            </select>
+            <button id="addItem">Add Item</button>
+        </div>
+        <h2>Order Summary</h2>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h2 class="total">Total: <span id="totalAmount">0/-</span></h2>
+        <button id="clearOrder">Get Bill</button>
+        <h3>Thanks for Visiting</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
